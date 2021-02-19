@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CensusDataImport
 {
-    class CensusAnalyserException:Exception
+    public class CensusAnalyserException:Exception
     {
         public ExceptionType type;
         public enum ExceptionType
