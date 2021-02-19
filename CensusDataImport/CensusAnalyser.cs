@@ -36,7 +36,7 @@ namespace CensusDataImport
             string[] censusData = File.ReadAllLines(csvFilePath);
             if (censusData[0] != dataHeaders)
             {
-                throw new CensusAnalyserException(CensusAnalyserException.ExceptionType.INCORRECT_HEADER, "Incorrect Header");
+                throw new CensusAnalyserException(CensusAnalyserException.ExceptionType.INCORRECT_HEADER, "Incorrect Header ");
             }
             foreach (string row in censusData.Skip(1))
             {
